@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset-UTF-8>
+  <meta name="viewport" content="width=device-width, initialscale=1.0">
+  <meta name="description"content="Bountys Portfolio">
+  <title>My Portfolio Page</title>
+  <link rel="stylesheet" href="bounty'sportfolio.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+        </ul>
+  </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Ofe Bounty Uko</h1>
+            <p>Front End Web Developer</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="my-photo">
+                  <img src="my-photo.jpeg">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a passionate developer. I love creating beautiful, functional applications that solve real-world problems.</p>
+                    <p>With 1 year of experience in the field, I've worked on various projects ranging from small business websites to large-scale applications. I'm always eager to learn new technologies and take on challenging projects.</p>
+                    <p>When I’m not coding, you’ll probably find me thinking up creative ideas, cracking a few jokes, or sharing knowledge with the developer community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                  <h3>Frontend Development</h3>
+                  <p>HTML5, CSS3, JavaScript (ES6+)</p>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                  <p>React, Vue.js, Angular</p>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 15%"></div>
+                  </div>
+                  <p>Responsive Design, Accessibility</p>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 45%"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <p>Front-End Mentor Challenge</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="four-card-feature-image">
+                      <img src="../images/four-card-feature.png" alt="four-card-feature">
+                    </div>
+                    <div class="project-content">
+                        <h3>Four-card-feature</h3>
+                        <p>A responsive feature showcase component built with HTML, CSS Grid, and Flexbox. Features a unique hub-style desktop layout that transforms into a clean mobile stack.</p>
+                        <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="social-links-image">
+                      <img src="../images/social-links-preview.png">
+                    </div>
+                    <div class="project-content">
+                        <h3>Social links Project</h3>
+                        <p>A responsive task management application with real-time collaboration features, built using Vue.js and Firebase.</p>
+                        <div class="project-links">
+                            <a href="https://codes-bounty-social-links-project.vercel.app/">Live Demo</a>
+                            <a href="https://github.com/codesbounty/social-links-project">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="portfolio-page-image">
+                        <img src="..\images\portfolio-page-preview.png">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern, responsive portfolio website showcasing creative design and smooth animations, built with vanilla JavaScript.</p>
+                        <div class="project-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Work Together</h2>
+                <p style="margin-bottom: 3rem; font-size: 1.2rem;">Have a project in mind? I'd love to hear about it!</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bounty-ofe-2394211b4/">LinkedIn</a>
+                <a href="https://github.com/codesbounty">GitHub</a>
+                <a href="https://x.com/3EDesigner">Twitter</a>
+            </div>
+            <p>&copy; 2025 Ofe Bounty Uko. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // Animate skill bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-progress');
+                    skillBars.forEach(bar => {
+                        bar.style.width = bar.style.width;
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skills-grid').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            this.reset();
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
